@@ -43,3 +43,34 @@ There are several neat Life in Weeks examples and tools, including:
 - [My Life in Days](https://days.sonnet.io/): Beautiful refactor, by days
 
 🍯 “I always get to where I am going by walking away from where I have been.” – Winnie the Pooh
+
+## 
+```
+{
+  "scripts": {
+    "build": "hugo --gc --minify",
+    "start": "hugo server --disableFastRender"
+  }
+}
+
+{
+    "version": 2,
+    "builds": [
+        {
+        "src": "life-in-weeks/*",
+        "use": "@vercel/static-build",
+            "config": {
+                "distDir": "public"
+            }
+        }
+    ],
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "/public/$1"
+        }
+    ]
+}
+
+
+```
