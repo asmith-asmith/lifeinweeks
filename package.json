@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "build": "hugo"
+    "build": "hugo --gc --minify",
+    "start": "hugo server --disableFastRender"
   }
 }

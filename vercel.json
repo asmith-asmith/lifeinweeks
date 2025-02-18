@@ -2,11 +2,11 @@
     "version": 2,
     "builds": [
         {
-        "src": "site/**/*",
+        "src": "life-in-weeks/**/*",
         "use": "@vercel/static-build",
-        "config": {
-            "distDir": "public"
-        }
+            "config": {
+                "distDir": "public"
+            }
         }
     ],
     "routes": [
